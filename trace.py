@@ -62,6 +62,10 @@ def indent(func, *args, **kwargs):
 
     logger.debug('{}* BEGIN: {} {}'.format(padding, name, str_line))
 
+    #
+    # YIELD to caller
+    #
+
     yield
 
     # Set the current level to False to indicate this level has completed
